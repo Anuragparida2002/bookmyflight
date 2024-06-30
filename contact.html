@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Site Logo" class="logo">
+        <h1 class="site-name"><a href="BOOKMYFLIGHTASS1.html" style="text-decoration: none; color: rgb(7, 253, 52);">BookMyFlight</a></h1>
+        <div >
+        <p class="contact" style="text-decoration: none; color: rgb(255, 213, 0);">Contact: info@BookMyFlight.com<br>Mob:7847910640</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div>
+            <p>
+                <b>
+                Welcome to BookMyFlight.<br>
+                You can contact us via filling the form or use email/mobile. <br>
+                Happy Journey!
+                </b>
+            </p>
+        </div>
+        <h2 style="text-align: center;">FORM</h2>
+        <form action="javascript:submitForm()" onSubmit = "return validate()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="genre">Favourite Genre:</label>
+            <input list="genres" name="genre" id="genre" required>
+            <datalist id="genres">
+                <option value="economy">
+                <option value="business">
+                <option value="superdeluxe">
+                <option value="normal">
+            </datalist>
+            <label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to our newsletter via email
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            function submitForm() {
+                window.alert("Form Submitted")
+            }
+        </script>
+        <footer>
+            <small>ALL RIGHTS RESERVED @MovieMagic 2024</small>
+        </footer>
+    </div>
+</body>
+</html>
